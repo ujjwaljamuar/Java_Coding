@@ -3,8 +3,8 @@ package Searching;
 import java.util.Scanner;
 
 public class SearchInMatrix {
-    public void search(int mat[][], int n, int x) {
-        int i = 0, j = n - 1; // or j = matrix[0].length-1;
+    public void search(int mat[][], int x) {
+        int i = 0, j = mat[0].length - 1 ;
         // element
 
         while (i < mat.length && j >= 0) {
@@ -32,7 +32,7 @@ public class SearchInMatrix {
         System.out.println("Enter the number : ");
         int n = sc.nextInt();
 
-        s.search(mat, 4, n);
+        s.search(mat, n);
 
         sc.close();
     }
