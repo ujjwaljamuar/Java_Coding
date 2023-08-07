@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class SearchInMatrix {
     public void search(int mat[][], int n, int x) {
-        int i = 0, j = n - 1;
+        int i = 0, j = n - 1; // or j = matrix[0].length-1;
         // element
 
-        while (i < n && j >= 0) {
+        while (i < mat.length && j >= 0) {
             if (mat[i][j] == x) {
                 System.out.print("Element found at " + i + " " + j);
                 return;
